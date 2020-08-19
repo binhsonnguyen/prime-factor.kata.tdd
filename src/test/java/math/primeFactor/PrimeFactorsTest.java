@@ -31,4 +31,8 @@ public class PrimeFactorsTest extends TestCase {
     public void testFour() throws Exception {
         assertEquals(list(2, 2), generate(4));
     }
+
+    public void testSix() throws Exception {
+        assertEquals(list(2, 3), generate(6));
+    }
 }
