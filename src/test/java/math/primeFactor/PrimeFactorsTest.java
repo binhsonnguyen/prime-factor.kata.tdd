@@ -5,6 +5,8 @@ import junit.framework.TestCase;
 import java.util.ArrayList;
 import java.util.List;
 
+import static math.primeFactor.PrimeFactors.generate;
+
 public class PrimeFactorsTest extends TestCase {
     private List<Integer> list(int... ints) {
         List<Integer> list = new ArrayList<Integer>();
@@ -15,10 +17,10 @@ public class PrimeFactorsTest extends TestCase {
     }
 
     public void testOne() throws Exception {
-        assertEquals(list(), PrimeFactors.generate(1));
+        assertEquals(list(), generate(1));
     }
 
     public void testTwo() throws Exception {
-        assertEquals(list(2), PrimeFactors.generate(2));
+        assertEquals(list(2), generate(2));
     }
 }
