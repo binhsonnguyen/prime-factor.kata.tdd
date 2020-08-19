@@ -6,8 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeFactorsTest extends TestCase {
-    private List<Integer> list() {
-        return new ArrayList<Integer>();
+    private List<Integer> list(int... ints) {
+        List<Integer> list = new ArrayList<Integer>();
+        for (int i : ints) {
+            list.add(i);
+        }
+        return list;
     }
 
     public void testOne() throws Exception {
