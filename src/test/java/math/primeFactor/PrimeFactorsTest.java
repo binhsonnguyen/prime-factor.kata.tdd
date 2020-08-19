@@ -2,6 +2,7 @@ package math.primeFactor;
 
 import junit.framework.TestCase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeFactorsTest extends TestCase {
@@ -10,6 +11,6 @@ public class PrimeFactorsTest extends TestCase {
     }
 
     private List<Integer> list() {
-        return null;
+        return new ArrayList<Integer>();
     }
 }
